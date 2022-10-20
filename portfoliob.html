@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Play:wght@200;300;400;500;600;700&family=Poppins&family=Amarante&family=Red+Rose&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Red Rose;
+            }
+            html, body{
+                background: #313131;
+                color: #eee;
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            header{
+                padding: 14px;
+                background: linear-gradient(to right, #333, #111);
+                box-shadow: 1px 1px 3px 1px #222;
+            }
+            nav{
+                text-align: center;
+                width: auto;
+                position: fixed;
+                overflow: hidden;
+                height: 0%;
+                transition: 0.5s;
+                width: 0%;
+                left: 0%;
+                top: 0%;
+                background: linear-gradient(to right, #333, #111);
+            }
+            nav a{
+                margin: 6px;
+                padding: 10px;
+                transition: 0.3s;
+                color: #eee;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+                border-top: 1px solid #eee;
+                border-radius: 5px;
+            }
+            nav button{
+                position: absolute;
+                top: 3%;
+                right: 3%;
+                padding: 6px;
+                border-radius: 5px;
+                background: #111;
+                birder: 1px solid #fff
+            }
+            .links{
+                display: grid;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                padding: 14px;
+            }
+            main{
+                display: grid;
+                width: 90%;
+                margin: auto;
+            }
+            section{
+                box-shadow: 1px 1px 2px 1px #222;
+                background: linear-gradient(to right, #333, #111);
+                border-radius: 5px;
+            }
+            section h2, section p, section h3, section li, section button{
+                padding: 14px;
+            }
+            ul, li{
+                list-style: none;
+            }
+            .skills h2, .projects h2{
+                border-bottom: 1px solid #000;
+            }
+            .profile{
+                display: block;
+                margin: auto;
+                margin-top: 30px;
+                text-align: center;
+                width: 100%;
+                padding: 30px;
+            }
+            .profile-pic{
+                display: block;
+                width: 250px;
+                height: 250px;
+                overflow: hidden;
+                border-radius: 50%;
+                margin: auto;
+            }
+            .about-me{
+                padding-top: 20px;
+            }
+            .about-me button{
+                border-radius: 5px;
+                width: 18em;
+                background: crimson;
+                border: 1px solid #000;
+                margin-top: 30px;
+                color: #eee;
+            }
+            .about-me p{
+                padding: 10px;
+                text-align: center;
+                font-size: 14px;
+            }
+            .skill{
+                padding: 15px;
+            }
+            .skills{
+                display: block;
+                text-align: center;
+                margin: auto;
+                width: 100%;
+                margin-top: 30px;
+            }
+            .skills h2{
+                margin-bottom: 14px;
+            }
+            .skills h4{
+                padding: 4px;
+            }
+            .my-skills{
+                display: grid;
+                width: 100%;
+            }
+            .html-bar, .css-bar, .js-bar, .wd-bar{
+                width: auto;
+                background: silver;
+                margin: 10px;
+                text-align: right;
+                border-radius: 5px;
+            }
+            .html-percent{
+                width: 85%;
+                background: crimson;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            .css-percent{
+                width: 65%;
+                background: crimson;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            .js-percent{
+                width: 8%;
+                background: crimson;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            .wd-percent{
+                width: 60%;
+                background: crimson;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            .projects{
+                display: grid;
+                width: 100%;
+                margin: auto;
+                margin-top: 30px;
+                text-align: center;
+            }
+            footer{
+                padding: 14px;
+                margin-top: 30px;
+                background: linear-gradient(to right, #333, #111);
+                box-shadow: 1px 1px 3px 1px #222;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 onclick="showMenu()">Oshiwa</h1>
+            <nav id="menu">
+                <button onclick="closeMenu()">✖️</button>
+                <div class="links">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="profile">
+                <div class="profile-pic">
+                <img src="profile.png">
+                </div>
+                <div class="about-me">
+                    <h2>Joshua Frederick Bravo</h2>
+                    <p>I am Oshiwa an aspiring front-end developer. I have an intermediate knowledge on HTML, CSS and basic knowledge on JavaScript. I am willing to be trained and learn.</p>
+                    <button onclick="location.href = 'mailto:oshiwabusiness@gmail.com'">Hire Me</button>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="my-skills">
+                    <h2>My Skills</h2>
+                <div class="skill">
+                    <h4>HTML</h4>
+                    <div class="html-bar">
+                        <div class="html-percent">
+                            85%
+                        </div>
+                    </div>
+                    <h4>CSS</h4>
+                    <div class="css-bar">
+                        <div class="css-percent">
+                            65%
+                        </div>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <div class="js-bar">
+                        <div class="js-percent">
+                            8%
+                        </div>
+                    </div>
+                    <h4>Web Design</h4>
+                    <div class="wd-bar">
+                        <div class="wd-percent">
+                            60%
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="my-projects">
+                    <h2>My Projects</h2>
+                    <ul>
+                        <li>
+                            <h3>Project 1</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>— Oshiwa</h2>
+        </footer>
+        <script>
+            function showMenu(){
+                document.getElementById("menu").style.height = "100%"
+                document.getElementById("menu").style.width = "100%"
+            }
+            function closeMenu(){
+                document.getElementById("menu").style.height = "0%"
+                document.getElementById("menu").style.width = "0%"
+            }
+        </script>
+    </body>
+</html>
